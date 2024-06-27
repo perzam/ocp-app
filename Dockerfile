@@ -3,7 +3,7 @@ FROM maven:3.8.4-openjdk-11 AS build
 WORKDIR /app
 
 # Copiar el archivo de configuración de Maven y las dependencias
-COPY . .
+RUN git clone https://github.com/perzam/ocp-app . 
 
 # Construir el proyecto y generar el WAR
 RUN mvn clean package
