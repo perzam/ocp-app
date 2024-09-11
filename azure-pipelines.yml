@@ -9,7 +9,7 @@ steps:
   displayName: 'Checkout code from GitHub'
 
 - script: |
-    echo "##vso[task.setvariable variable=tag]7.0"
+    echo "##vso[task.setvariable variable=tag]8.0"
   displayName: 'Generate unique tag'
 
 - task: Docker@2
