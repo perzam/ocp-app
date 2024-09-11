@@ -16,7 +16,6 @@ steps:
   displayName: 'Build Docker image'
   inputs:
     containerRegistry: 'quayRegistry'
-    repository: 'quay.io/perzam/ocp-app'
     dockerfile: 'Dockerfile'
     tags: |
       $(tag)
