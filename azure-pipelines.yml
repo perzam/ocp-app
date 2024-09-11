@@ -24,7 +24,7 @@ steps:
   displayName: 'Build Docker image'
   inputs:
     containerRegistry: 'quayRegistry'
-    repository: 'quay.io/perzam/ocp-app'
+    repository: 'perzam/ocp-app'
     dockerfile: 'Dockerfile'
     tags: |
       $(tag)
@@ -34,7 +34,7 @@ steps:
   inputs:
     command: 'push'
     containerRegistry: 'quayRegistry'
-    repository: 'quay.io/perzam/ocp-app'
+    repository: 'perzam/ocp-app'
     tags: |
       $(tag)
 
