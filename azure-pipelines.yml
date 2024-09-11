@@ -37,5 +37,3 @@ steps:
     containerRegistry: 'quayRegistry'
     username: 'perzam'
     password: 's0p0rt3.P3rZ4m.&2'
-
-
