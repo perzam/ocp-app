@@ -5,16 +5,13 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: GitHubCheckout@1
+- checkout: self
   displayName: 'Checkout code from GitHub'
-  inputs:
-    repository: 'https://github.com/perzam/ocp-app'
-    ref: 'main'
 
 - script: |
     echo "##vso[task.setvariable variable=tag]$(date +%Y%m%d%H%M%S)"
   displayName: 'Generate unique tag'
-  
+
 - task: Docker@2
   displayName: 'Build Docker image'
   inputs:
@@ -40,3 +37,4 @@ steps:
     containerRegistry: 'quayRegistry'
     username: 'perzam'
     password: 's0p0rt3.P3rZ4m.&2'
+
