@@ -25,7 +25,7 @@ steps:
   inputs:
     command: 'push'
     containerRegistry: 'quayRegistry'
-    repository: 'perzam/ocp-app'
+    repository: 'ocp-app'
     tags: |
       $(tag)
 
