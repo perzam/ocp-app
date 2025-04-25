@@ -6,10 +6,10 @@ Esta es una aplicación Java que se conecta a una base de datos MySQL 5.7 y mues
 
 ## Requisitos Previos
 
-- Java Development Kit (JDK) 8 o superior
+- Java Development Kit (JDK) 8 o superior.
 - Apache Maven
 
-## Variables para la conexion a la base de datos.
+## Variables para la conexion a la base de datos mysql.
 
 - DB_SERVICE_NAME
 - DB_USER
