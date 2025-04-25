@@ -43,7 +43,7 @@ public class DatabaseServlet extends HttpServlet {
 
             // Mostrar los resultados
             out.println("<html><body>");
-            out.println("<h2>Contenido de la Tabla Employees:</h2>");
+            out.println("<h2>Contenido de la Tabla Employees 2:</h2>");
             out.println("<table border='1'><tr><th>ID</th><th>Nombre</th><th>Posición</th><th>Salario</th></tr>");
 
             while (resultSet.next()) {
